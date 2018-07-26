@@ -42,9 +42,9 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
         restaurantListTableView.dataSource = self
         restaurantListTableView.delegate = self
         
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: OverviewModelController.RestaurantNotification.notificationSet, object: nil)
-        
-        print(OverviewModelController.sharedController.restaurantList.count)
+//   NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: OverviewModelController.RestaurantNotification.notificationSet, object: nil)
+//
+//        print(OverviewModelController.sharedController.restaurantList.count)
         
     }
     
@@ -96,7 +96,7 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return OverviewModelController.sharedController.restaurantList.count
+        return 2
         
     }
     
@@ -106,9 +106,10 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "restaurantListCell", for: indexPath) as? RestaurantListTableViewCell else { return UITableViewCell() }
         
-        let restaurantForCell = OverviewModelController.sharedController.restaurantList[indexPath.row]
-        
-        cell.restaurant = restaurantForCell
+//        let restaurantForCell = OverviewModelController.sharedController.nameOfRestaurant[indexPath.row]
+//
+//        cell.nameOfRestaurant = restaurantForCell
+//        cell.addressOfRestaurant = restaurantForCell
         
         return cell
         

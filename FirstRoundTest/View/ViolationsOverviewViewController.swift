@@ -23,10 +23,10 @@ class ViolationsOverviewViewController: UIViewController {
     
     func updateViews() {
         
-        majorViolationsLabel.text = "\(String(OverviewModelController.sharedController.firstDateMajorNumber))"
-        
-        minorViolationsLabel.text = "\(String(OverviewModelController.sharedController.firstDateMinorNumber))"
-        dateOfLastInspection.text = "As of \(OverviewModelController.sharedController.firstInspectionDate)"
+//        majorViolationsLabel.text = "\(String(OverviewModelController.sharedController.firstDateMajorNumber))"
+//        
+//        minorViolationsLabel.text = "\(String(OverviewModelController.sharedController.firstDateMinorNumber))"
+//        dateOfLastInspection.text = "As of \(OverviewModelController.sharedController.firstInspectionDate)"
         
     }
     

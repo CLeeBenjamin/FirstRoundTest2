@@ -775,6 +775,8 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             
             drawerScrollView.addSubview(drawerContentContainer)
             
+            
+            
             drawerContentContainer.frame = CGRect(x: 20, y: drawerScrollView.bounds.height - lowestStop, width: 330, height: drawerScrollView.bounds.height + bounceOverflowMargin)
             drawerBackgroundVisualEffectView?.frame = drawerContentContainer.frame
             drawerShadowView.frame = drawerContentContainer.frame
@@ -945,7 +947,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
     /// - Parameters:
     ///   - bounceHeight: The height to bounce
     ///   - speedMultiplier: The multiplier to apply to the default speed of the animation. Note, default speed is 0.75.
-    public func bounceDrawer(bounceHeight: CGFloat = 50.0, speedMultiplier: Double = 0.75) {
+    public func bounceDrawer(bounceHeight: CGFloat = 0.0, speedMultiplier: Double = 0.0) {
         
         guard drawerPosition == .collapsed || drawerPosition == .partiallyRevealed else {
             print("Pulley: Error: You can only bounce the drawer when it's in the collapsed or partially revealed position.")

@@ -16,40 +16,58 @@ class MapViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var homeSearchBar: DesignableSearchBar!
     
-    
+    var finalArray = [Restaurant]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         FirebaseApp.configure()
-        homeSearchBar.delegate = self
+       homeSearchBar.delegate = self
+       OverviewModelController.sharedController.fetchAllData()
         
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-  
         
     }
 
+  
+    
+    
+    
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
-        guard let usersSearch = searchBar.text else { return }
-        OverviewModelController.sharedController.firebaseDataFetch(userSearch: usersSearch)
+//     guard let userSearch = searchBar.text else { return }
         
-        pulleyViewController?.setDrawerPosition(position: .partiallyRevealed, animated: true)
+     print(OverviewModelController.sharedController.restaurantList.count)
+        
+        
         self.homeSearchBar.resignFirstResponder()
         
         DispatchQueue.main.async {
-            
+          
             self.homeSearchBar.text = ""
         
         }
+        
+        
     }
     
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        self.homeSearchBar.becomeFirstResponder()
-    }
+//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+//        pulleyViewController?.setDrawerPosition(position: .partiallyRevealed, animated: true)
+//        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { (_) in
+//
+////            guard let userSearch = searchBar.text else { return }
+//            self.homeSearchBar.becomeFirstResponder()
+//
+//
+//
+//        }
+//
+//    }
     
     
 }

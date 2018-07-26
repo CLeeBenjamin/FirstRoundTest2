@@ -39,16 +39,16 @@ class ThreeInspectionsViewController: UIViewController {
     func updateViews() {
         
         //MARK: - latest, most recent inspection date is first
-        
-        firstRecentInspectionDateLabel.text = "\(String(OverviewModelController.sharedController.firstInspectionDate))"
-        firstRecentMajorViolationLabel.text = " Major: \(String(OverviewModelController.sharedController.firstDateMajorNumber))"
-        firstRecentMinorViolationLabel.text = "Minor: \(String(OverviewModelController.sharedController.firstDateMinorNumber))"
-        
-        //MARK: - Second most recent
-        secondRecentInspectionDateLabel.text = "\(String(OverviewModelController.sharedController.secondInspectionDate))"
-        secondRecentMajorViolationLabel.text = "Major: \(String(OverviewModelController.sharedController.secondDateMajorNumber))"
-        secondRecentMinorViolationLabel.text = "Minor: \(String(OverviewModelController.sharedController.secondDateMinorNumber))"
-        
+//        
+//        firstRecentInspectionDateLabel.text = "\(String(OverviewModelController.sharedController.firstInspectionDate))"
+//        firstRecentMajorViolationLabel.text = " Major: \(String(OverviewModelController.sharedController.firstDateMajorNumber))"
+//        firstRecentMinorViolationLabel.text = "Minor: \(String(OverviewModelController.sharedController.firstDateMinorNumber))"
+//        
+//        //MARK: - Second most recent
+//        secondRecentInspectionDateLabel.text = "\(String(OverviewModelController.sharedController.secondInspectionDate))"
+//        secondRecentMajorViolationLabel.text = "Major: \(String(OverviewModelController.sharedController.secondDateMajorNumber))"
+//        secondRecentMinorViolationLabel.text = "Minor: \(String(OverviewModelController.sharedController.secondDateMinorNumber))"
+//        
         
         
         

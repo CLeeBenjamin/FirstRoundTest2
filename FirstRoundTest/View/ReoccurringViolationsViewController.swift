@@ -31,36 +31,36 @@ class ReoccurringViolationsViewController: UIViewController {
 
     func updateViews() {
         
-        firstMostNameViolation.text = "\(String(OverviewModelController.sharedController.firstMostKey))"
-        
-        firstMostNumberViolations.text = "\(String(OverviewModelController.sharedController.firstMostValue))"
-        
-        
-        
-        //MARK: - Second Violation Label
-        
-        if OverviewModelController.sharedController.secondMostValue == 0 || OverviewModelController.sharedController.secondMostValue == 1 {
-            
-            secondMostNameViolation.text = "---"
-            
-        } else {
-        secondMostNameViolation.text = "\(String(OverviewModelController.sharedController.secondMostKey))"
-        
-        secondMostNumberViolation.text = "\(String(OverviewModelController.sharedController.secondMostValue))"
-        }
-        
-        
-        //MARK: - Third Display of Violations
-        if OverviewModelController.sharedController.thirdMostValue == 0 || OverviewModelController.sharedController.thirdMostValue == 1 {
-            
-         thirdMostViolation.text = "---"
-            
-        } else {
-        thirdMostViolation.text = "\(String(OverviewModelController.sharedController.thirdMostKey))"
-        
-        thirdMostNumberViolation.text = "\(String(OverviewModelController.sharedController.thirdMostValue))"
-        
-        }
+//        firstMostNameViolation.text = "\(String(OverviewModelController.sharedController.firstMostKey))"
+//        
+//        firstMostNumberViolations.text = "\(String(OverviewModelController.sharedController.firstMostValue))"
+//        
+//        
+//        
+//        //MARK: - Second Violation Label
+//        
+//        if OverviewModelController.sharedController.secondMostValue == 0 || OverviewModelController.sharedController.secondMostValue == 1 {
+//            
+//            secondMostNameViolation.text = "---"
+//            
+//        } else {
+//        secondMostNameViolation.text = "\(String(OverviewModelController.sharedController.secondMostKey))"
+//        
+//        secondMostNumberViolation.text = "\(String(OverviewModelController.sharedController.secondMostValue))"
+//        }
+//        
+//        
+//        //MARK: - Third Display of Violations
+//        if OverviewModelController.sharedController.thirdMostValue == 0 || OverviewModelController.sharedController.thirdMostValue == 1 {
+//            
+//         thirdMostViolation.text = "---"
+//            
+//        } else {
+//        thirdMostViolation.text = "\(String(OverviewModelController.sharedController.thirdMostKey))"
+//        
+//        thirdMostNumberViolation.text = "\(String(OverviewModelController.sharedController.thirdMostValue))"
+//        
+//        }
     }
     
 

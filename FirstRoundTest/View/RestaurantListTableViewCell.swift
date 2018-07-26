@@ -14,17 +14,21 @@ class RestaurantListTableViewCell: UITableViewCell {
     @IBOutlet weak var restaurantName: UILabel!
     @IBOutlet weak var restaurantAddress: UILabel!
     
-    var restaurant: Restaurant? {
+    var nameOfRestaurant: String? {
         didSet {
             updateViews()
         }
     }
+    var addressOfRestaurant: String? 
+    
+    
     
     func updateViews() {
-        guard let restaurant = restaurant else { return }
+        guard let addressRestaurant = addressOfRestaurant else { return }
+        guard let nameRestaurant = nameOfRestaurant  else { return }
         
-        restaurantName.text = "Name: \(String(restaurant.name))"
-        restaurantAddress.text = "Address: \(String(restaurant.address))"
+        restaurantName.text = "Name: \(nameRestaurant)"
+       restaurantAddress.text = "Address: \(addressRestaurant))"
         
     }
     

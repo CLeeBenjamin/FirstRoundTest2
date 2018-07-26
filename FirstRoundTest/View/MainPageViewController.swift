@@ -50,7 +50,7 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
     
     //MARK: - A function to retrieve each View Controllers
     
-    fileprivate func retrieveViewControllerFor(withId identifier: String) -> UIViewController {
+     func retrieveViewControllerFor(withId identifier: String) -> UIViewController {
         
         return UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: identifier)
     }
