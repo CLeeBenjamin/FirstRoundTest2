@@ -54,7 +54,7 @@
 		715716F720F15F56001500C2 /* DesignableNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableNavigationBar.swift; sourceTree = "<group>"; };
 		7157170120F1B23B001500C2 /* HomeScreenPullBarFirstLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPullBarFirstLayer.swift; sourceTree = "<group>"; };
 		7157170320F1BF01001500C2 /* GripBarsOnPullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GripBarsOnPullScreen.swift; sourceTree = "<group>"; };
-		717787EC20FD6DA000280B93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		717787EC20FD6DA000280B93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		717787EE20FD725200280B93 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		717787F020FD728900280B93 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		717787F220FDADEB00280B93 /* SegueToOverviewFrmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueToOverviewFrmCell.swift; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 		715716D620F04BBD001500C2 /* FirstRoundTest */ = {
 			isa = PBXGroup;
 			children = (
-				717787EC20FD6DA000280B93 /* GoogleService-Info.plist */,
 				717886FE20F33AE000851F91 /* Model */,
 				715716E920F06364001500C2 /* View */,
 				71B49D7B20F2AB6400228162 /* Controller */,
@@ -207,6 +206,7 @@
 				715716D720F04BBD001500C2 /* AppDelegate.swift */,
 				715716DE20F04BBE001500C2 /* Assets.xcassets */,
 				715716E020F04BBE001500C2 /* LaunchScreen.storyboard */,
+				717787EC20FD6DA000280B93 /* GoogleService-Info.plist */,
 				715716E320F04BBE001500C2 /* Info.plist */,
 			);
 			path = AppRelatedFiles;
