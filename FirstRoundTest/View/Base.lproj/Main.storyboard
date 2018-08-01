@@ -70,7 +70,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="202.40000000000001" y="-877.51124437781118"/>
+            <point key="canvasLocation" x="1082" y="-922"/>
         </scene>
         <!--Restaurant List View Controller-->
         <scene sceneID="YpL-vO-HaZ">
@@ -434,12 +434,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oZ-Xm-KVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="-900"/>
+            <point key="canvasLocation" x="1886" y="-900"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sGU-jQ-8RW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t1D-mE-U1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lVf-LD-IzP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <value key="contentSizeForViewInPopover" type="size" width="0.0" height="0.0"/>
@@ -455,6 +454,7 @@
                         <segue destination="ZGT-LW-FP4" kind="relationship" relationship="viewControllers" id="yOR-3i-Cen"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1D-mE-U1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1599.2" y="-877.51124437781118"/>
         </scene>

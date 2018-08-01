@@ -18,7 +18,7 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
        self.reloadTableView()
     }
     
-
+    let lazyAss = MapViewController.sharedMapViewController.tableViewNameArray.count
     
     
     static let sharedController = RestaurantListViewController()
@@ -42,9 +42,7 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
         restaurantListTableView.dataSource = self
         restaurantListTableView.delegate = self
         
-//   NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: OverviewModelController.RestaurantNotification.notificationSet, object: nil)
-//
-//        print(OverviewModelController.sharedController.restaurantList.count)
+   NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: MapViewController.RestaurantNotification.notificationSet, object: nil)
         
     }
     
@@ -95,9 +93,12 @@ class RestaurantListViewController: UIViewController, UITableViewDelegate, UITab
     //MARK: - TableViews ///////////////////////////////////////////////////////////////////
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 2
-        
+       
+        print("This second")
+       print(MapViewController.sharedMapViewController.tableViewNameArray.count)
+      
+        return MapViewController.sharedMapViewController.tableViewNameArray.count
+       
     }
     
     

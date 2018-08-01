@@ -10,9 +10,7 @@ import Foundation
 import Firebase
 
 
-class OverviewModelController {
-    
-
+class OverviewModelController: UIViewController {
     
     
     //MARK: - SharedController
@@ -20,49 +18,35 @@ class OverviewModelController {
 
     //MARK: - Source Of Truth
    
-    var ref: DatabaseReference?
-    
-    var restaurantList = [Restaurant]()
-//    var filteredList = [Restaurant]()
-
-
-    func fetchAllData() {
-        
-        self.ref = Database.database().reference()
-        
-       
-        self.ref?.child("restaurants").observe( .childAdded , with: { (snap) in
-            guard let topArray = snap.value as? [[String:Any]] else {print(":(") ; return }
-            var restaurantArray = [Restaurant]()
-            
-            for dictionary in topArray {
-                
-                guard let address = dictionary["address"] as? String,
-                    let city = dictionary["city"] as? String,
-                    let inspectionDate = dictionary["inspectionDate"] as? String,
-                    let name = dictionary["name"] as? String,
-                    let major = dictionary["major"] as? Int,
-                    let minor = dictionary["minor"] as? Int,
-                    let violationTitle = dictionary["violationTitle"] as? String else { continue }
-                
-                //MARK: - creates restaurants from the list above
-                let restaurant = Restaurant(address: address, city: city, inspectionDate: inspectionDate, name: name, major: major, minor: minor, violationTitle: violationTitle)
-                
-                //MARK: - Adds a restaurant to restaurant array instance
-                restaurantArray.append(restaurant)
-                
-            }
-            
-          
-            self.restaurantList = restaurantArray
-            print(self.restaurantList.count)
-            
-        })
-    
     
     }
     
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 //    
 //    func dataFetchFromArray(userSearch: String) -> [Restaurant]{
@@ -89,7 +73,7 @@ class OverviewModelController {
 //       
 //    }
     
-}
+
 
 
 
